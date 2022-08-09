@@ -112,7 +112,31 @@ void PrintArray1(int[] col)
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1;
+    while (index < count)
+    {
+        if(collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
 int[] array1 = new int[10];   // new int[10] означает создай новый масив в котором будет 10 млиментов.
+array1[4] = 4;
+array1[6] = 4;
 
 FillArray1(array1);
 PrintArray1(array1);
+
+Console.WriteLine();
+
+int pos = IndexOf(array1, 444);
+Console.WriteLine(pos);
