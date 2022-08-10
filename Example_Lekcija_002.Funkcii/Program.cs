@@ -88,19 +88,27 @@
 
 // Таже задача с Элимнтамо но только с случайно сгенерированними числами. 
 
+
+int[] array1 = new int[10];   // Создали новый Массив и указали что по умольчанию в нём будет 10 Элиментов. 
+                              // new int[10]; означает дословно создай новый массив в ктором будет 10 Элиментов.
+
+
+
+          // Заполнаем нащ массив :array1: случайними числями. (Метод Заполнения Масива)
 void FillArray1(int[] collection)    //  Наименование метода FillArray,  Аргумент - collection
 {
     int length = collection.Length;  // Длина массива получаем. 
-    int index = 0; 
+    int index = 0;                   // 
     while (index < length)
     {
         collection[index] = new Random().Next(1, 10);   // Обрашаемся к аргументу collection на пазицию index и кладём новое случайное число 
-                         // из деапазона 1 - 10. 
+                                                        // из деапазона 1 - 10. 
         index++;
     }
-
 }
 
+   
+          //  Элимент которая печатает претыдуший масив.  (Метод печати на экран Массива)
 void PrintArray1(int[] col)
 {
     int count = col.Length;
@@ -112,31 +120,43 @@ void PrintArray1(int[] col)
     }
 }
 
-int IndexOf(int[] collection, int find)
+
+
+int IndexOf(int[] collection, int find)  //  В элимет IndexOf В качкстве аргумента будет приходить массив collection Так как в методе
+                                         //  FillArrae1 мы получаем случайные значения и пишем из в массив  collection.
+                                         //  Возврошает позицию тоесть Индекс.
 {
     int count = collection.Length;
     int index = 0;
     int position = -1;
     while (index < count)
     {
-        if(collection[index] == find)
+        if(collection[index] == find)    // Тут мы смотрим значения под нидексом равен значению find заданному в элименте pos.
         {
-            position = index;
+            position = index;       // Если савпала число в проверяемом индексе с find то ты передаём значения индекса в переменную position
             break;
         }
         index++;
     }
-    return position;
+    return position;   // Возврашаем позицию элимента.
 }
 
-int[] array1 = new int[10];   // new int[10] означает создай новый масив в котором будет 10 млиментов.
-array1[4] = 4;
-array1[6] = 4;
 
-FillArray1(array1);
-PrintArray1(array1);
+FillArray1(array1);     //  Присваиваем в Элимент FillArray1 значения из переменной array1. И работаем с Элименте с ним. 
+
+array1[2] = 4;          // Принудительно добавили 4 в программу. Под индексом 2. 
+array1[8] = 4;          // Принудительно добавили 4 в программу. Под индексом 8. 
+
+PrintArray1(array1);    //  Присваиваем в Элимент PrintArray1 значения из переменной array1. И работаем с Элименте с ним.
 
 Console.WriteLine();
 
-int pos = IndexOf(array1, 444);
+int pos = IndexOf(array1, 4);           //  В переменную pos мы передали значения из элимента IndexOf. 
+                                        // Тоесть в array1 мы вложили цикл. А после в переменную find в аргументе IndexOf вписываем 
+                                        // значения этой переменной. 
 Console.WriteLine(pos);
+
+
+
+
+
