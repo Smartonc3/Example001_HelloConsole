@@ -127,7 +127,7 @@ int IndexOf(int[] collection, int find)  //  В элимет IndexOf В качк
                                          //  Возврошает позицию тоесть Индекс.
 {
     int count = collection.Length;
-    int index = 0;
+    int index = 0
     int position = -1;
     while (index < count)
     {
