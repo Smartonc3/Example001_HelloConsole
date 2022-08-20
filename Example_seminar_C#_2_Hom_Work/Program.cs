@@ -59,3 +59,116 @@ else
 {
     Console.WriteLine("Введите правильный день недели.");
 }
+
+
+// Доп. задача: Игра угадайка. Программа загадывает случайное число. Пользователь его угадывает. Если пользователь дает неправильный ответ, 
+//                                то программа сообщает, больше загаданное число или меньше
+// Доп. задача с усложнением: на отгадывание дается 3 попытки.
+
+
+int d = new Random().Next(1, 10);
+Console.WriteLine("Загадонная цифра = " + d);
+Console.Write("Введите Загаданное число , ");
+int f = Convert.ToInt32(Console.ReadLine());
+int index3 = 0;
+
+
+while (index3 < 3)
+{  
+    if (d == f)
+        {
+            Console.WriteLine("Вы угодали число");
+            break;
+        }
+        else
+        {
+            while (index3 < 3)
+            {
+                if (d == f)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Число не угадано. Попробуйте сново: ");
+                    int g = Convert.ToInt32(Console.ReadLine());
+                    f = g;
+                    index3++;
+                }
+            }
+            
+        }
+Console.Write("Попыток больше нет , ");
+}
+
+
+
+
+
+Console.WriteLine("Задача 'Дополнительная' ");
+
+int randomNumber = new Random().Next(100, 110);
+
+
+void AttemptCounter(int maxCounter){
+
+  int counter = 1;
+  while (counter <= maxCounter) {
+
+    Console.Write("Попытка номер " + counter);
+    Console.Write(".   Введи число: ");
+    int myNumber = Convert.ToInt32(Console.ReadLine());
+
+    if (myNumber == randomNumber){
+      Console.WriteLine("Поздравляю, ты угадал! ");
+      break;
+    }
+    else {
+      CheckingTheNumber(myNumber, randomNumber);
+      counter++;
+    }
+  }
+}
+
+void CheckingTheNumber(int myNumber, int randomNumber) {
+
+  if (myNumber > randomNumber) {
+    Console.WriteLine("Не угадал, твоё число великовато");
+  }
+  else Console.WriteLine("Не угадал, твоё число маловато");
+}
+
+Console.WriteLine("Игра до 3 попыток");
+AttemptCounter(3);
+
+Console.WriteLine("В основные попытки не уложился. Продолжим ? (напиши да/нет)");
+
+string? yesNo = Console.ReadLine();
+
+if (yesNo == "да"){
+AttemptCounter(1000);
+}
+else Console.Write("Загаданное число было: " + randomNumber);
+
+
+
+
+
+
+
+int g = new Random().Next(1, 10);
+Console.WriteLine("Загадонная цифра = " + d);
+Console.Write("Введите Загаданное число , ");
+int h = Convert.ToInt32(Console.ReadLine());
+
+if (g == h)
+    {
+        Console.WriteLine("Вы угодали число");
+      
+    }
+    else
+    {
+        Console.WriteLine("Число не угадано. Попробуйте сново: ");
+    }
+
+

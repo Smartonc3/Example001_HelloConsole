@@ -64,19 +64,22 @@
 //     Console.WriteLine("нет ");
 // }
 
-// Программа которая принимает на вход два числа и проверяет, является ли одно число квадратом другого
+// // Программа которая принимает на вход два числа и проверяет, является ли одно число квадратом другого
 
-Console.WriteLine("Введите Первое  число , ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите Второе  число , ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите Первое  число , ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите Второе  число , ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-if (a * a == b || b * b == a)
-{
-    Console.WriteLine("да ");
-}
-else
-{
-    Console.WriteLine("нет ");
-}
+// if (a * a == b || b * b == a)
+// {
+//     Console.WriteLine("да ");
+// }
+// else
+// {
+//     Console.WriteLine("нет ");
+// }
+
+
+
 
