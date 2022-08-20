@@ -14,7 +14,9 @@ Console.WriteLine("Введите 5 Значное число: ");
 try
 {
     int N = Convert.ToInt32(Console.ReadLine());
-    string str = N.ToString();                      
+    
+    // string str = N.ToString();      
+    string str = Convert.ToString(N);                
     int length = str.Length;                       
     int CorrectLength = 5;
 

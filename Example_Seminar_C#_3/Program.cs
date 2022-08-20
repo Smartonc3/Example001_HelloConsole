@@ -98,46 +98,46 @@
 
 
 
-// // Написать Программу, которая принимает на взод кординаты двух точек и находит расстояния между ними в 2D пространстве. 
-// //                           A (3,6) B(2,1)  -  5.06
-// //                           A (7,-5) B(1,-1) - 7.21
+// Написать Программу, которая принимает на взод кординаты двух точек и находит расстояния между ними в 2D пространстве. 
+//                           A (3,6) B(2,1)  -  5.06
+//                           A (7,-5) B(1,-1) - 7.21
 
 
-// Console.WriteLine("Введите число кардинат. : ");
-// int ax = Convert.ToInt32(Console.ReadLine());
-// int ay = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число кардинат. : ");
+int ax = Convert.ToInt32(Console.ReadLine());
+int ay = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine("Введите число кардинат. : ");
-// int bx = Convert.ToInt32(Console.ReadLine());
-// int by = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число кардинат. : ");
+int bx = Convert.ToInt32(Console.ReadLine());
+int by = Convert.ToInt32(Console.ReadLine());
 
-// double AB = Math.Sqrt(Math.Pow(ax-bx,2) + Math.Pow(ay-by,2));   //  Math.Sqrt - Извлечения корня.
-// //                                                                  Mat.Pow  -  Возвешение в степень. ",2" - В какую. 
+double AB = Math.Sqrt(Math.Pow(ax-bx,2) + Math.Pow(ay-by,2));   //  Math.Sqrt - Извлечения корня.
+//                                                                  Mat.Pow  -  Возвешение в степень. ",2" - В какую. 
 
-// Console.WriteLine(AB);
+Console.WriteLine(AB);
 
-// Написать программу которая на вход число N и выдаёт таблицу квадратов чисел от 1 до N.
-//  5 -> 1, 4, 9, 19, 25
-//  2 ->  1, 4
+// // Написать программу которая на вход число N и выдаёт таблицу квадратов чисел от 1 до N.
+// //  5 -> 1, 4, 9, 19, 25
+// //  2 ->  1, 4
 
-Console.WriteLine("Введите число N. : ");
-int N = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число N. : ");
+// int N = Convert.ToInt32(Console.ReadLine());
 
-int i = 1; 
+// int i = 1; 
 
-while (i < N + 1)
-{
-    if (i == N)
-     {
-        Console.Write( i * i );
-        break;
-     }
-     else
-     {
-        // Console.Write($"{i * i}, " );
-        Console.Write(i * i + ", ");
-        i++;
-     }
+// while (i < N + 1)
+// {
+//     if (i == N)
+//      {
+//         Console.Write( i * i );
+//         break;
+//      }
+//      else
+//      {
+//         // Console.Write($"{i * i}, " );
+//         Console.Write(i * i + ", ");
+//         i++;
+//      }
      
-}
+// }
 
