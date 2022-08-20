@@ -1,5 +1,5 @@
 ﻿
-Console.Clear();
+// Console.Clear();
 
 // Console.WriteLine("Введите Х: ");
 // int r = Convert.ToInt32(Console.ReadLine());
