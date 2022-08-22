@@ -1,24 +1,24 @@
-﻿// int a = new Random().Next(10, 100);
+﻿int a = new Random().Next(10, 100);
 
-// Console.WriteLine("Случайное число о 10 до 99: " + a);
+Console.WriteLine("Случайное число о 10 до 99: " + a);
 
-// int FirstDigit = a  / 10;
-// int SecondDigit = a  % 10;
+int FirstDigit = a  / 10;
+int SecondDigit = a  % 10;
 
 
-// if (FirstDigit > SecondDigit)
-// {
-//      Console.WriteLine("Наибольшая цифра " + FirstDigit);
+if (FirstDigit > SecondDigit)
+{
+     Console.WriteLine("Наибольшая цифра " + FirstDigit);
     
-// }
-// else
-// {
-//      Console.WriteLine("Наибольшая цифра " + SecondDigit);
-// }
+}
+else
+{
+     Console.WriteLine("Наибольшая цифра " + SecondDigit);
+}
 
 
 
-//  Написать программу из 3 чисел которая удалает 2 число. из 3 значных делает 2 знвчное. 
+//  // Написать программу из 3 чисел которая удалает 2 число. из 3 значных делает 2 знвчное. 
 
 // int b = new Random().Next(100, 1000);
 
@@ -49,7 +49,7 @@
 // }
 
 
-// Принимает число и решаем делется число на 7 и на 23 одновременно.
+// // Принимает число и решаем делется число на 7 и на 23 одновременно.
 
 
 // Console.WriteLine("Введите Первое  число , ");
