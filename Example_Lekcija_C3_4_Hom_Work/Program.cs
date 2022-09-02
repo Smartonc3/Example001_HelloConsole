@@ -5,16 +5,16 @@
 // // // 2, 4 -> 16
 
 
-// Console.WriteLine("Задача 25");
-// Console.WriteLine();
+Console.WriteLine("Задача 25");
+Console.WriteLine();
 
-// Console.WriteLine("Введите первое число: ");
-// double A = Convert.ToDouble(Console.ReadLine());
-// Console.WriteLine("Введите второе число: ");
-// double B = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите первое число: ");
+double A = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+double B = Convert.ToDouble(Console.ReadLine());
 
-// double AB = Math.Pow(A,B);
-// Console.WriteLine(AB);
+double AB = Math.Pow(A,B);
+Console.WriteLine(AB);
 
 // // ---------------------------------------------------------------------------------------------------------------------------
 
@@ -57,11 +57,11 @@
 // // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // // 6, 1, 33 -> [6, 1, 33]
 
-int[] array = new int[] { 3, 4, 2, 3, 5, 1, 33, 1, };
-int length = array.Length;
-for (int i = 0; i < length; i++)
-{
-    Console.Write($"Массив: {array[i]}, ");
-}
+// int[] array = new int[] { 3, 4, 2, 3, 5, 1, 33, 1, };
+// int length = array.Length;
+// for (int i = 0; i < length; i++)
+// {
+//     Console.Write($"Массив: {array[i]}, ");
+// }
 
 
